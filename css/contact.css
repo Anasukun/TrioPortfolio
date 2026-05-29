@@ -1,0 +1,157 @@
+.contact-banner {
+  padding-top: 60px;
+  padding-bottom: 32px;
+}
+
+.contact-banner h1 {
+  margin-bottom: 16px;
+}
+
+.contact-description {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #424753;
+}
+
+.contact-content {
+  padding-bottom: 60px;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-details-card {
+  position: relative;
+  padding-top: 40px;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 2px solid #1b1c1c;
+  margin: 12px 0 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contact-icon-blue {
+  background-color: #0058bd;
+  border: 2px solid #1b1c1c;
+}
+
+.contact-icon-red {
+  background-color: #b51b15;
+  border: 2px solid #1b1c1c;
+}
+
+.contact-item h6 {
+  font-size: 13px;
+  color: #424753;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.contact-link {
+  font-weight: 700;
+  color: #1b1c1c;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.social-connect-card h3 {
+  margin-bottom: 16px;
+}
+
+.social-media-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-media-links .tag {
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.social-media-links .tag:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.contact-form-container {
+  position: relative;
+  padding: 32px;
+}
+
+.paperclip-icon {
+  position: absolute;
+  top: -8px;
+  right: 24px;
+  font-size: 24px;
+  transform: rotate(15deg);
+}
+
+.contact-submit-button {
+  width: 100%;
+  font-size: 18px;
+  padding: 16px;
+  margin-top: 8px;
+}
+
+.contact-submit-button svg {
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.map-section {
+  padding-bottom: 40px;
+}
+
+.map-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.map-wrapper iframe {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+}

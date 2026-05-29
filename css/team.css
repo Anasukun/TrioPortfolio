@@ -1,0 +1,130 @@
+.team-banner {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.team-banner h1 {
+  margin-bottom: 16px;
+}
+
+.team-description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #424753;
+}
+
+.team-cards-section {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.team-cards-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.member-card {
+  position: relative;
+  width: 280px;
+  background-color: #9adbb4;
+  border: 3px solid #1b1c1c;
+  border-radius: 18px 22px 20px 16px;
+  box-shadow: 4px 4px 0px #333333;
+  padding: 40px 24px 24px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.member-card:hover {
+  box-shadow: 2px 2px 0px #333333;
+}
+
+.member-card-yellow {
+  background-color: #ffdea0;
+}
+
+.member-card-blue {
+  background-color: #d8e2ff;
+}
+
+.member-avatar {
+  width: 56px;
+  height: 56px;
+  border: 3px solid #1b1c1c;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-card h3 {
+  margin-bottom: 2px;
+}
+
+.member-card h5 {
+  color: #424753;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.member-card p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.member-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.member-skills .tag {
+  font-size: 12px;
+  padding: 3px 10px;
+}
+
+.team-table-section {
+  padding-bottom: 60px;
+}
+
+.team-media-section {
+  padding-bottom: 60px;
+}
+
+.team-media-section audio {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.team-media-section figcaption {
+  font-size: 14px;
+  color: #424753;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .team-cards-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    width: 100%;
+    max-width: 320px;
+    transform: none !important;
+  }
+}

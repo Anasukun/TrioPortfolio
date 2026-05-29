@@ -1,0 +1,147 @@
+.about-banner {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-banner-card {
+  background-color: #fce4e4;
+  border: 3px solid #1b1c1c;
+  border-radius: 24px 18px 22px 20px;
+  box-shadow: 6px 6px 0px #333333;
+  padding: 48px;
+  max-width: 600px;
+  transform: rotate(-1deg);
+}
+
+.about-banner-card h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.about-banner-card p {
+  color: #424753;
+  font-size: 15px;
+}
+
+.about-tags {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.timeline-section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #c2c6d5;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 3px solid #1b1c1c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.timeline-left .timeline-card {
+  margin-right: auto;
+  margin-left: 0;
+  max-width: 340px;
+  transform: rotate(-1deg);
+}
+
+.timeline-right .timeline-card {
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 340px;
+  transform: rotate(1deg);
+}
+
+.timeline-left .timeline-card {
+  background-color: #d8e2ff;
+}
+
+.timeline-year {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b51b15;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.timeline-card-with-image {
+  padding: 24px;
+}
+
+.timeline-image {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.timeline-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .about-banner-card {
+    padding: 28px;
+    transform: none;
+  }
+
+  .about-banner-card h1 {
+    font-size: 28px;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-icon {
+    left: 20px;
+  }
+
+  .timeline-left .timeline-card,
+  .timeline-right .timeline-card {
+    margin-left: 60px;
+    margin-right: 0;
+    max-width: 100%;
+    transform: none;
+  }
+}
